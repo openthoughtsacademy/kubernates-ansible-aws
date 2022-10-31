@@ -10,4 +10,5 @@ eksctl create cluster  \
 —node-type t2.micro
 —nodes 2
 
+eksctl delete cluster my-cluster
 ```
