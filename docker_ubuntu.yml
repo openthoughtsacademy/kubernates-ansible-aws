@@ -6,7 +6,9 @@
   #connection: ssh
   
   tasks:
-   
+   - name: Run the equivalent of "apt-get update" as a separate step
+      apt: 
+       update_cache: yes  
    - name: Make the Swap inactive
      command: swapoff -a
    - name: Remove Swap entry from /etc/fstab.
