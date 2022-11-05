@@ -1,5 +1,5 @@
 ---
-- hosts: "masters, workers"
+- hosts: "master, worker"
   #remote_user: ansible
   become: true
   gather_facts: yes
