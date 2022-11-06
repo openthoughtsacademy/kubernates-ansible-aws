@@ -41,9 +41,10 @@ $ export KOPS_STATE_STORE=s3://k8s.bucket.cluster
      ```
  $ ssh-keygen
      ```
+     
 9. Create Kubernetes Cluster Definitions on S3 bucket
 ```
-$ kops create cluster --cloud=aws --zones=us-east-2b --name=demo.bucket.cluster --dns-zone=private-zone --dns private --state s3://demo.bucket.cluster
+$ kops create cluster --cloud=aws --zones=us-east-2b --name=demo.bucket.cluster --dns-zone=private.zone --dns private --state s3://demo.bucket.cluster
 
 ```
 10. Create Cluster
