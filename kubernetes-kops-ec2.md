@@ -38,8 +38,8 @@ AmazonVPCFullAccess
    
 8. Create S3 bucket
 ```
- aws s3 mb s3://k8s.bucket.cluster
- export KOPS_STATE_STORE=s3://k8s.bucket.cluster
+ aws s3 mb s3://demo.bucket.cluster
+ export KOPS_STATE_STORE=s3://demo.bucket.cluster
 ```
 
 9. Create SSH Keys
