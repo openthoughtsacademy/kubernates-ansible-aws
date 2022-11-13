@@ -69,7 +69,7 @@ kubectl expose deployment my-nginx --port=80 --type=LoadBalancer;
 ```
 kubectl delete svc my-nginx;
 kubectl delete deploy my-nginx;
+kops delete cluster --name demo.bucket.cluster --state s3://demo.bucket.cluster --yes
 
-kops delete cluster --name demo.bucket.cluster --yes;
 ```
 
