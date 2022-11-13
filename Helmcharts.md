@@ -42,8 +42,10 @@ helm status nginx
  helm install demo demo
 ```
 8. delete repo 
+```
 helm delete <chart>
- 
+ ```
 Upgrade using helm
-
+```
   helm upgrade <chart>
+  ```
