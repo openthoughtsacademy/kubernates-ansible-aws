@@ -60,6 +60,8 @@ kops edit instancegroups nodes-ap-south-1a
 
 12. Create a deployment and service
 ```
+kubectl create deployment my-nginx --image=nginx --replicas=1 --port=80; 
+kubectl expose deployment my-nginx --port=80 --type=LoadBalancer;
 
 ```
 14. Delete Cluster
