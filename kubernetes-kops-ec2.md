@@ -45,14 +45,14 @@ AmazonVPCFullAccess
 9. Create Kubernetes Cluster Definitions on S3 bucket
 ```
  kops create cluster --cloud=aws --zones=ap-south-1a --name=demo.bucket.cluster --dns-zone=bucket.cluster --dns private --state s3://demo.bucket.cluster
-
+```
 10. Modify the kubernetes Cluster
 ```
 kops get instance groups
 kops edit instancegroups nodes-ap-south-1a
 
 ```
-```
+
 11. Update Cluster
 ```
  kops update cluster demo.bucket.cluster --state s3://demo.bucket.cluster –yes
