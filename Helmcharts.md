@@ -23,17 +23,27 @@ helm install bitnami/nginx
 ```
 
 5. Verify the installation 
+
 ```
 kubectl get all
 
-
-```
 helm list
 
 ```
+6. Helm Status
 
-helm install <chart>
-  
+```
+helm status nginx
+```
+7. create your own chart
+```
+ helm create demo
+ tree demo
+ helm install demo demo
+```
+8. delete repo 
+helm delete <chart>
+ 
 Upgrade using helm
 
   helm upgrade <chart>
