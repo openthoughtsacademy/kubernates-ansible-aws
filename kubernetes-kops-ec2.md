@@ -37,10 +37,11 @@ AmazonVPCFullAccess
  export KOPS_STATE_STORE=s3://k8s.bucket.cluster
 ```
 
-8. Create SSH Keys
-     ```
+9. Create SSH Keys
+ 
+```
   ssh-keygen
-  ```
+```
      
 9. Create Kubernetes Cluster Definitions on S3 bucket
 ```
