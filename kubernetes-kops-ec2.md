@@ -39,8 +39,8 @@ AmazonVPCFullAccess
 
 8. Create SSH Keys
      ```
- $ ssh-keygen
-     ```
+  ssh-keygen
+  ```
      
 9. Create Kubernetes Cluster Definitions on S3 bucket
 ```
