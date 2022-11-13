@@ -46,9 +46,27 @@ AmazonVPCFullAccess
 ```
  kops create cluster --cloud=aws --zones=ap-south-1a --name=demo.bucket.cluster --dns-zone=bucket.cluster --dns private --state s3://demo.bucket.cluster
 
+10. Modify the kubernetes Cluster
 ```
-10. Create Cluster
+kops get instance groups
+kops edit instancegroups nodes-ap-south-1a
+
 ```
- kops update cluster k8s.bucket.cluster --state s3://k8s.bucket.cluster –yes
+```
+11. Update Cluster
+```
+ kops update cluster demo.bucket.cluster --state s3://demo.bucket.cluster –yes
+```
+
+12. Create a deployment and service
+```
+
+```
+14. Delete Cluster
+```
+kubectl delete svc my-nginx;
+kubectl delete deploy my-nginx;
+
+kops delete cluster --name demo.bucket.cluster --yes;
 ```
 
