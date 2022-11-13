@@ -61,7 +61,7 @@ kops edit instancegroups nodes-ap-south-1a --state s3://demo.bucket.cluster
 
 11. Update Cluster
 ```
- kops update cluster demo.bucket.cluster --state s3://demo.bucket.cluster –yes
+ kops update cluster --name demo.bucket.cluster --yes --admin --state s3://demo.bucket.cluster
 ```
 
 12. Create a deployment and service
