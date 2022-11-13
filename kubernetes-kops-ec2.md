@@ -49,8 +49,8 @@ AmazonVPCFullAccess
 ```
 10. Modify the kubernetes Cluster
 ```
-kops get instance groups
-kops edit instancegroups nodes-ap-south-1a
+kops get instancegroups --state s3://demo.bucket.cluster
+kops edit instancegroups nodes-ap-south-1a --state s3://demo.bucket.cluster
 
 ```
 
